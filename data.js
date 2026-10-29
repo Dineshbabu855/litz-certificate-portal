@@ -24,7 +24,7 @@ window.CERTIFICATE_RECORDS = {
     "startDate": "19 May 2026",
     "endDate": "18 June 2026",
     "certificateId": "LITZB2790",
-    "studentId": "7212231205063",
+    "studentId": "721223205063",
     "companyWebsite": "https://www.litztech.in",
     "companyEmail": "coimbatore@litztech.in",
     "companyPhone": "0422 4382930"
@@ -54,7 +54,7 @@ window.CERTIFICATE_RECORDS = {
     "startDate": "19 May 2026",
     "endDate": "18 June 2026",
     "certificateId": "LITZB2792",
-    "studentId": "7212231205009",
+    "studentId": "721223205009",
     "companyWebsite": "https://www.litztech.in",
     "companyEmail": "coimbatore@litztech.in",
     "companyPhone": "0422 4382930"
