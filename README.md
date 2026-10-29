@@ -51,4 +51,3 @@ If Python is installed, run this from the project folder:
 - Do not represent these pages as officially verified by LITZ Tech unless the organization has authorized the portal and confirmed the data.
 - The provided sample values were taken from the certificate image supplied in this conversation. Replace placeholders and check all IDs/dates before publishing.
 - For stronger security, private records, controlled editing, and official verification, use a backend/database with access controls rather than a public static data file.
-"# litz-certificate-portal" 

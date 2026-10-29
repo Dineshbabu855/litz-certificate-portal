@@ -1,0 +1,80 @@
+[
+  {
+    "name": "VISHNU P",
+    "rollNumber": "721223205061",
+    "studentId": "721223205061",
+    "certificateId": "LITZB2789",
+    "internship": "Software Testing",
+    "institute": "Karpagam Institute of Technology",
+    "startDate": "19/05/2026",
+    "endDate": "18/06/2026",
+    "url": "https://dineshbabu855.github.io/litz-certificate-portal/?id=LITZB2789",
+    "certificateImage": "01_VISHNU_P_LITZB2789.png",
+    "qrImage": "qr_codes/LITZB2789.png"
+  },
+  {
+    "name": "VISHNUVARMA B",
+    "rollNumber": "721223120563",
+    "studentId": "721223120563",
+    "certificateId": "LITZB2790",
+    "internship": "Software Testing",
+    "institute": "Karpagam Institute of Technology",
+    "startDate": "19/05/2026",
+    "endDate": "18/06/2026",
+    "url": "https://dineshbabu855.github.io/litz-certificate-portal/?id=LITZB2790",
+    "certificateImage": "02_VISHNUVARMA_B_LITZB2790.png",
+    "qrImage": "qr_codes/LITZB2790.png"
+  },
+  {
+    "name": "DINESH BABU V",
+    "rollNumber": "721223205015",
+    "studentId": "721223205015",
+    "certificateId": "LITZB2791",
+    "internship": "Software Testing",
+    "institute": "Karpagam Institute of Technology",
+    "startDate": "19/05/2026",
+    "endDate": "18/06/2026",
+    "url": "https://dineshbabu855.github.io/litz-certificate-portal/?id=LITZB2791",
+    "certificateImage": "03_DINESH_BABU_V_LITZB2791.png",
+    "qrImage": "qr_codes/LITZB2791.png"
+  },
+  {
+    "name": "ASHWIN S",
+    "rollNumber": "721223120509",
+    "studentId": "721223120509",
+    "certificateId": "LITZB2792",
+    "internship": "Software Testing",
+    "institute": "Karpagam Institute of Technology",
+    "startDate": "19/05/2026",
+    "endDate": "18/06/2026",
+    "url": "https://dineshbabu855.github.io/litz-certificate-portal/?id=LITZB2792",
+    "certificateImage": "04_ASHWIN_S_LITZB2792.png",
+    "qrImage": "qr_codes/LITZB2792.png"
+  },
+  {
+    "name": "KIRTHICK S",
+    "rollNumber": "721223205029",
+    "studentId": "721223205029",
+    "certificateId": "LITZB2793",
+    "internship": "Software Testing",
+    "institute": "Karpagam Institute of Technology",
+    "startDate": "19/05/2026",
+    "endDate": "18/06/2026",
+    "url": "https://dineshbabu855.github.io/litz-certificate-portal/?id=LITZB2793",
+    "certificateImage": "05_KIRTHICK_S_LITZB2793.png",
+    "qrImage": "qr_codes/LITZB2793.png"
+  },
+  {
+    "name": "SANJAY K",
+    "rollNumber": "721223205046",
+    "studentId": "721223205046",
+    "certificateId": "LITZB2794",
+    "internship": "Software Testing",
+    "institute": "Karpagam Institute of Technology",
+    "startDate": "19/05/2026",
+    "endDate": "18/06/2026",
+    "url": "https://dineshbabu855.github.io/litz-certificate-portal/?id=LITZB2794",
+    "certificateImage": "06_SANJAY_K_LITZB2794.png",
+    "qrImage": "qr_codes/LITZB2794.png"
+  }
+]
