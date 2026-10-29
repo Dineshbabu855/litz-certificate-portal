@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f45b16">
+  <title>Certificate Verification | LITZ Tech</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="LITZ Tech home">
+      <span class="brand-mark"><span></span><span></span><span></span><span></span></span>
+      <span><strong><i>LITZ</i> Tech</strong><small>Certificate Portal</small></span>
+    </a>
+    <span class="top-label">INTERNSHIP RECORD</span>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="hero-icon">✓</div>
+      <p class="eyebrow">LITZ TECH · CERTIFICATE PORTAL</p>
+      <h1>Certificate details</h1>
+      <p class="subtitle">Internship record associated with this QR code.</p>
+    </section>
+
+    <section id="record" class="record-card" hidden>
+      <div class="record-head">
+        <div id="avatar" class="avatar" aria-label="Student photo placeholder">DB</div>
+        <div class="record-heading">
+          <span class="status"><span class="status-dot"></span> RECORD FOUND</span>
+          <h2 id="student-name">Student name</h2>
+          <p id="institute">Institute</p>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="details-grid">
+        <div class="detail"><span>Company</span><strong id="company">LITZ Tech</strong></div>
+        <div class="detail"><span>Internship field</span><strong id="field">Software Testing</strong></div>
+        <div class="detail"><span>Internship start date</span><strong id="start-date">—</strong></div>
+        <div class="detail"><span>Internship end date</span><strong id="end-date">—</strong></div>
+        <div class="detail"><span>Certificate ID</span><strong id="certificate-id">—</strong></div>
+        <div class="detail"><span>Student ID</span><strong id="student-id">—</strong></div>
+      </div>
+      <div class="notice">
+        <span class="notice-icon">i</span>
+        <p>This page displays the record associated with the QR code. For official verification, confirm the record with the issuing organization.</p>
+      </div>
+      <div class="contact">
+        <div><span>Website</span><a id="company-website" href="https://www.litztech.in" target="_blank" rel="noopener">www.litztech.in</a></div>
+        <div><span>Email</span><a id="company-email" href="mailto:coimbatore@litztech.in">coimbatore@litztech.in</a></div>
+        <div><span>Telephone</span><a id="company-phone" href="tel:04224382930">0422 4382930</a></div>
+      </div>
+    </section>
+
+    <section id="not-found" class="not-found" hidden>
+      <div class="not-found-icon">?</div>
+      <h2>Certificate record not found</h2>
+      <p>The QR code does not match a record in this portal. Check the code or contact the issuing organization.</p>
+    </section>
+
+    <footer>
+      <p><strong>LITZ Tech</strong> <span>·</span> Coimbatore · Chennai · Madurai · Erode</p>
+      <small>Certificate details portal · Contact the issuing organization for official confirmation.</small>
+    </footer>
+  </main>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QR Link Helper | LITZ Tech</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .tool-card { max-width: 620px; margin: 20px auto; padding: 26px; border: 1px solid var(--line); border-radius: 18px; background: white; }
+    label { display:block; margin: 16px 0 7px; color: var(--muted); font-size: 12px; font-weight: 700; }
+    input { width:100%; padding:12px; border:1px solid #d7d7dc; border-radius:9px; font:inherit; }
+    button { margin-top:14px; border:0; border-radius:9px; padding:12px 16px; background:var(--orange); color:white; font-weight:800; cursor:pointer; }
+    #result { margin-top:22px; text-align:center; }
+    #qrcode { display:inline-block; padding:12px; border:1px solid var(--line); border-radius:12px; background:white; }
+    #link { overflow-wrap:anywhere; font-size:13px; }
+    .hint { color:var(--muted); font-size:13px; line-height:1.5; }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./"><span class="brand-mark"><span></span><span></span><span></span><span></span></span><span><strong><i>LITZ</i> Tech</strong><small>QR Link Helper</small></span></a>
+  </header>
+  <main class="wrap">
+    <section class="hero"><p class="eyebrow">QR CODE HELPER</p><h1>Create a QR link</h1><p class="subtitle">Use this after publishing the website online.</p></section>
+    <section class="tool-card">
+      <p class="hint">Enter your published website URL and the exact certificate ID from data.js. Each friend gets a different QR code but uses the same website.</p>
+      <label for="base">Published website URL</label>
+      <input id="base" placeholder="https://yourusername.github.io/litz-certificate-portal/">
+      <label for="id">Certificate ID</label>
+      <input id="id" placeholder="LITZB2789">
+      <button id="make">Generate QR code</button>
+      <div id="result" hidden>
+        <div id="qrcode"></div>
+        <p id="link"></p>
+        <button id="download">Download QR PNG</button>
+      </div>
+      <p class="hint">This page uses a QR code library loaded from a CDN, so an internet connection is required to generate the code.</p>
+    </section>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script>
+    const base = document.getElementById("base");
+    const idInput = document.getElementById("id");
+    const result = document.getElementById("result");
+    const qrBox = document.getElementById("qrcode");
+    let generatedUrl = "";
+    document.getElementById("make").addEventListener("click", () => {
+      const root = base.value.trim();
+      const id = idInput.value.trim();
+      if (!root || !id) { alert("Enter the published website URL and certificate ID."); return; }
+      try {
+        const url = new URL(root);
+        if (url.protocol !== "https:" && url.protocol !== "http:") throw new Error();
+        url.searchParams.set("id", id);
+        generatedUrl = url.toString();
+      } catch { alert("Enter a valid website URL, including https://"); return; }
+      qrBox.innerHTML = "";
+      if (typeof QRCode === "undefined") { alert("QR library did not load. Check your internet connection."); return; }
+      new QRCode(qrBox, { text: generatedUrl, width: 220, height: 220, correctLevel: QRCode.CorrectLevel.H });
+      document.getElementById("link").textContent = generatedUrl;
+      result.hidden = false;
+    });
+    document.getElementById("download").addEventListener("click", () => {
+      const canvas = qrBox.querySelector("canvas");
+      const image = qrBox.querySelector("img");
+      const source = canvas ? canvas.toDataURL("image/png") : image ? image.src : null;
+      if (!source) return;
+      const a = document.createElement("a");
+      a.href = source;
+      a.download = (idInput.value.trim() || "certificate") + "-QR.png";
+      a.click();
+    });
+  </script>
+</body>
+</html>
